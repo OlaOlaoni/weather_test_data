@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 
 def load_data():
-    data=pd.read_excel("one.xlsx")
+    data=pd.read_excel("six.xlsx")
     return data
 
 def home():
     data=load_data()
 
-    st.write('## Report for First Trial Reading Data')
+    st.write('## Report for Sixth Trial Reading Data')
     st.table(data)
 
     db_data = data[['SS', 'CS']]
